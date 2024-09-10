@@ -1,0 +1,5 @@
+-- 코드를 입력하세요 # IFNULL - null값 대체
+SELECT PT_NAME, PT_NO, GEND_CD, AGE, ifnull(TLNO, 'NONE')
+FROM PATIENT
+WHERE AGE <= 12 AND GEND_CD = "W"
+ORDER BY AGE desc, PT_NAME asc
